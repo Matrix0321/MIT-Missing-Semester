@@ -13,4 +13,12 @@ Some exercises after lectures.
 
 Answer:  
 ```echo '#!/bin/bash' > semester```  
-```echo "curl --head --silent https://missing.csail.mit.edu" >> semester```
+```echo "curl --head --silent https://missing.csail.mit.edu" >> semester```  
+### 5.Try to execute the file, i.e. type the path to the script (./semester) into your shell and press enter. Understand why it doesn’t work by consulting the output of ls (hint: look at the permission bits of the file).
+```./semester```  
+```ls -l```  
+The permission string is -rw-r--r--, so my user is not allowed to execute this file.  
+### 6.Run the command by explicitly starting the sh interpreter, and giving it the file semester as the first argument, i.e. sh semester. Why does this work, while ./semester didn’t?
+We don't have permission to run ```semester```, but we can still run ```sh```.
+### 7.Look up the chmod program (e.g. use man chmod).
+The answer is clear.
