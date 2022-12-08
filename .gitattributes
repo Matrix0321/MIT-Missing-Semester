@@ -1,2 +1,3 @@
-*.cs linguist-language=Shell
-*.ico linguist-language=Shell
+*.js linguist-language=Shell
+*.css linguist-language=Shell
+*.html linguist-language=Shell
